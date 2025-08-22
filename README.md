@@ -39,19 +39,19 @@ source .mlops/bin/activate
 pip install -r requirements.txt
 ```
 
-### Train the Model
+### 4. Train the Model
 
 ```
 python train.py
 ```
 
-### Run the API Locally
+### 5. Run the API Locally
 
 ```
 uvicorn main:app --reload
 ```
 
-### Sample Input
+### 6. Sample Input
 
 Visit localhost:8000 and in the UI, provide below user input. And hit on Predict to see the result.
 
@@ -63,19 +63,19 @@ Visit localhost:8000 and in the UI, provide below user input. And hit on Predict
 
 <img width="1221" height="661" alt="image" src="https://github.com/user-attachments/assets/e7bcd525-a7e2-4ffc-9b18-8021f32e0979" />
 
-### Build the Docker Image
+### 7. Build the Docker Image
 
 ```
 docker build -t mlops-diabetic-prediction .
 ```
 
-### Run the Container
+### 8. Run the Container
 
 ```
 docker run -p 8000:8000 mlops-diabetic-prediction
 ```
 
-### Deploy to Kubernetes
+### 9. Deploy to Kubernetes
 
 ```
 Use KIND or Minikube for this purpose.
