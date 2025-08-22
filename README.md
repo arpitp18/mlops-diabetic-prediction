@@ -82,6 +82,21 @@ Use KIND or Minikube for this purpose.
 
 kubectl apply -f mlops-diabetic-prediction-deployment.yaml
 ```
+
+### 10. Test
+
+```
+kubectl port-forward svc/diabetes-prediction-service 9000:80
+Forwarding from 127.0.0.1:9000 -> 8000
+Forwarding from [::1]:9000 -> 8000
+Handling connection for 9000
+```
+
+<img width="1189" height="658" alt="image" src="https://github.com/user-attachments/assets/d7475a97-89bc-47c5-9347-bd936624103c" />
+
+<img width="1321" height="684" alt="image" src="https://github.com/user-attachments/assets/eab04341-0d1d-4787-b6a5-2a179394e504" />
+
+
 ## Tech Stacks
 - FastAPI
 - Docker
