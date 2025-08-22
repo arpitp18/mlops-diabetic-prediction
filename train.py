@@ -8,7 +8,7 @@ import joblib
 url = "https://raw.githubusercontent.com/plotly/datasets/master/diabetes.csv"
 df = pd.read_csv(url)
 
-print("✅ Columns:", df.columns.tolist())  # Debug print
+print("Columns:", df.columns.tolist())  # Debug print
 
 # Prepare data
 X = df[["Pregnancies", "Glucose", "BloodPressure", "BMI", "Age"]]
@@ -23,4 +23,4 @@ model.fit(X_train, y_train)
 
 # Save
 joblib.dump(model, "diabetes_model.pkl")
-print("✅ Model saved as diabetes_model.pkl")
+print("Model saved as diabetes_model.pkl")
