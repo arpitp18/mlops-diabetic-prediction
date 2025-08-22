@@ -1,4 +1,4 @@
-# 🩺 Diabetes Prediction Model – Your First MLOps Project (FastAPI + Docker + K8s)
+# Diabetes Prediction Model
 
 This project is for  **Building and Deploying an ML Model** using a simple and real-world use case: predicting whether a person is diabetic based on health metrics.
 Project consists of:
@@ -22,7 +22,7 @@ Predict if a person is diabetic based on:
 
 ---
 
-## 🚀 Quick Start
+## steps:
 
 ### 1. Clone the Repo
 
@@ -82,4 +82,7 @@ Use KIND or Minikube for this purpose.
 
 kubectl apply -f mlops-diabetic-prediction-deployment.yaml
 ```
-
+## Tech Stacks
+- FastAPI
+- Docker
+- Kubernetes (KinD or Minikube)
